@@ -14,11 +14,6 @@
     text-decoration: none;
 }
 
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
 .navbar a.active {
     background-color: red;
     color: white;
@@ -32,6 +27,7 @@
 
 .container {
     max-width: 400px;
+    height: 500px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
