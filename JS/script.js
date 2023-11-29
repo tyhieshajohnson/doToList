@@ -16,9 +16,10 @@ function toggleNavbar() {
 
 // To Do List:
 let todoList = [];
+const listContainer = document.getElementById("toDoList");
+const taskNameInput = document.getElementById("taskName");
 
 function renderList() {
-    const listContainer = document.getElementById("todoList");
     listContainer.innerHTML = "";
 
     todoList.forEach((item) => {
@@ -50,7 +51,6 @@ function renderList() {
 }
 
 function addItem() {
-    const taskNameInput = document.getElementById("taskName");
     const taskName = taskNameInput.value.trim();
 
     if (taskName.length > 0) {
@@ -66,6 +66,8 @@ function addItem() {
         alert("Please enter a valid task name.");
     }
 }
+
+addItemButton.addEventListener("click", addItem);
 
 function toggleComplete(itemId) {
     const item = todoList.find((item) => item.id === itemId);
