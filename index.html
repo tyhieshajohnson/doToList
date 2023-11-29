@@ -8,8 +8,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>To Do List</h1>
-    <p>Manage Your Life From Anywhere</p>
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar">
+        <a href="#" class="active">Ty's To-Do</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNavbar()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- To Do List -->
+    <div class="container">
+        <h1>To-Do List</h1>
+        <p>Manage Your Life From Anywhere</p>
+        <div>
+            <a href=""><button onclick="sortItem()">Sort</button></a>
+            <input type="text" id="taskName" placeholder="Add Your Next Task...">
+            <a href=""><button onclick="addItem()">Add Task</button></a>
+        </div>
+        <ul id="todoList"></ul>
+    </div>
     <script src="/JS/script.js"></script>
 </body>
 </html>
